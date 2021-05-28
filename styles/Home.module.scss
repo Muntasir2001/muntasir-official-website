@@ -1,0 +1,149 @@
+.red-underline {
+	height: 10px;
+	background-color: #ff4454;
+	max-width: 100px;
+	margin: 0 140px;
+}
+
+/* hero section */
+.hero {
+	display: flex;
+	flex-direction: column;
+	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+	height: 94vh;
+	background: url('../public/nd_portfolio_hero_bkg.png') center center/cover;
+	color: #fff;
+	justify-content: center;
+
+	.title {
+		// margin-top: 280px;
+		margin-top: -20px;
+		margin-left: 140px;
+		display: flex;
+		flex-direction: column;
+		text-transform: uppercase;
+		font-size: 1.8rem;
+
+		span {
+			color: #ff4454;
+		}
+	}
+
+	.para {
+		margin-left: 140px;
+		margin-top: 10px;
+
+		p {
+			font-size: 1.2rem;
+		}
+	}
+}
+
+/* about section */
+.about {
+	background-color: #1b1c1e;
+	color: #fff;
+	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+	.red-underline {
+		height: 10px;
+		background-color: #ff4454;
+		max-width: 100px;
+		margin: 0 140px;
+	}
+
+	h1 {
+		padding: 160px 140px 0 140px;
+		text-transform: uppercase;
+	}
+
+	.first-para {
+		padding: 50px 140px 0px 140px;
+
+		span {
+			color: #ff4454;
+		}
+	}
+
+	.second-para {
+		padding: 15px 140px 180px 140px;
+	}
+}
+
+/* contact me */
+.contact-me {
+	color: #000;
+	background-color: #ebebeb;
+	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+	padding-bottom: 40px;
+
+	h1 {
+		text-transform: uppercase;
+		padding: 150px 140px 0 140px;
+	}
+
+	form {
+		margin: 80px 140px 100px 140px;
+
+		.field {
+			display: flex;
+			margin-bottom: 30px;
+			align-items: center;
+			// justify-content: space-between;
+
+			label {
+				font-weight: bold;
+				font-size: 1.1rem;
+				min-width: 10px;
+				// flex: 1;
+				// margin-right: 300px;
+			}
+
+			input {
+				margin-left: 300px;
+				border: 0px;
+				padding: 10px 10px;
+				width: 420px;
+			}
+
+			textarea {
+				margin-left: 275px;
+				border: 0;
+				min-width: 420px;
+				max-width: 420px;
+				min-height: 150px;
+			}
+		}
+
+		.email-field {
+			input {
+				margin-left: 303px;
+			}
+		}
+
+		.message-field {
+			align-items: flex-start;
+
+			label {
+				margin-top: 10px;
+			}
+		}
+
+		.submit-btn {
+			input {
+				background: #ff4454;
+				color: #fff;
+				padding: 15px 10px;
+				width: 120px;
+				margin-left: 0;
+				margin: 12px 0;
+				border: 0;
+			}
+
+			input:hover {
+				cursor: pointer;
+				background-color: #e53d4b;
+			}
+		}
+	}
+}
