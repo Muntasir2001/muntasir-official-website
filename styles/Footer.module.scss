@@ -1,0 +1,50 @@
+.footer {
+	margin-top: -17px; /* this is for the whitespace appearing at the top of footer for no reason */
+	background-color: #1b1c1e;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+	color: #fff;
+	padding: 65px 0;
+
+	.title {
+		margin-bottom: 15px;
+	}
+
+	.links {
+		margin-bottom: 20px;
+
+		ul {
+			list-style: none;
+			display: flex;
+
+			li {
+				padding: 0 10px;
+				text-transform: uppercase;
+			}
+		}
+	}
+
+	.social-medias {
+		display: flex;
+		align-items: center;
+		margin-top: 10px;
+
+		a {
+			margin: 0 5px;
+
+			img {
+				width: 35px;
+			}
+		}
+	}
+
+	.copyright {
+		margin-top: 30px;
+
+		p {
+			font-size: 0.9rem;
+		}
+	}
+}

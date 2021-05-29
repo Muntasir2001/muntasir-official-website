@@ -22,7 +22,7 @@ export default function home() {
 					</p>
 				</div>
 			</div>
-			<div className={homeStyle.about}>
+			<div className={homeStyle.about} id='about'>
 				<h1>about me</h1>
 				<div className={homeStyle['red-underline']}></div>
 				<p className={homeStyle['first-para']}>
@@ -45,7 +45,7 @@ export default function home() {
 					program.
 				</p>
 			</div>
-			<div className={homeStyle['contact-me']}>
+			<div className={homeStyle['contact-me']} id='contact'>
 				<h1>contact me</h1>
 				<div className={homeStyle['red-underline']}></div>
 				<form>

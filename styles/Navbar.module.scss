@@ -1,6 +1,7 @@
 .navbar {
 	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 	display: flex;
+	align-items: center;
 	justify-content: space-between;
 	background-color: #1b1c1e;
 
@@ -23,6 +24,7 @@
 
 				a {
 					font-size: 0.9rem;
+					font-weight: 400;
 				}
 
 				a:hover {
