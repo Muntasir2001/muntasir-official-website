@@ -13,10 +13,11 @@ export default function home() {
 		e.preventDefault();
 
 		const form = e.target;
+		console.log(form.getAttribute('name'));
 		fetch('/', {
 			method: 'POST',
 			headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
-			body: encodeURI({
+			body: encode({
 				'form-name': form.getAttribute('name'),
 				...info,
 			}),
