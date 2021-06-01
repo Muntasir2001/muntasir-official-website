@@ -48,29 +48,66 @@ export default function home() {
 			<div className={homeStyle['contact-me']} id='contact'>
 				<h1>contact me</h1>
 				<div className={homeStyle['red-underline']}></div>
-				<form>
-					<div
-						className={`${homeStyle['name-field']} ${homeStyle['field']}`}
-					>
-						<label htmlFor='name'>Name</label>
-						<input type='text' />
+				<div className={homeStyle['contact-me-body']}>
+					<form>
+						<div
+							className={`${homeStyle['name-field']} ${homeStyle['field']}`}
+						>
+							<label htmlFor='name'>Name</label>
+							<input type='text' />
+						</div>
+						<div
+							className={`${homeStyle['email-field']} ${homeStyle['field']}`}
+						>
+							<label htmlFor='name'>Email</label>
+							<input type='email' />
+						</div>
+						<div
+							className={`${homeStyle['message-field']} ${homeStyle['field']}`}
+						>
+							<label htmlFor='name'>Message</label>
+							<textarea name='text' id=''></textarea>
+						</div>
+						<div className={homeStyle['submit-btn']}>
+							<input type='submit' value='Submit' />
+						</div>
+					</form>
+					<div className={homeStyle.sidebar}>
+						<div className={homeStyle.title}>
+							<h2>contact info</h2>
+							<div className={homeStyle['red-underlines']}></div>
+						</div>
+						<ul>
+							<li>
+								<a
+									href='https://github.com/Muntasir2001'
+									target='_blank'
+								>
+									<img src='/sidebar/github.svg' alt='github logo' />
+									<p>Muntasir2001</p>
+								</a>
+							</li>
+							<li>
+								<a href='https://discord.gg/vNe9QVrWNa' target='_blank'>
+									<img src='/sidebar/discord.svg' alt='discord logo' />
+									<p>Join my Discord server</p>
+								</a>
+							</li>
+							<li>
+								<a
+									href='https://www.instagram.com/noob_dev54/'
+									target='_blank'
+								>
+									<img
+										src='/sidebar/instagram.svg'
+										alt='instagram logo'
+									/>
+									<p>noob_dev54</p>
+								</a>
+							</li>
+						</ul>
 					</div>
-					<div
-						className={`${homeStyle['email-field']} ${homeStyle['field']}`}
-					>
-						<label htmlFor='name'>Email</label>
-						<input type='email' />
-					</div>
-					<div
-						className={`${homeStyle['message-field']} ${homeStyle['field']}`}
-					>
-						<label htmlFor='name'>Message</label>
-						<textarea name='text' id=''></textarea>
-					</div>
-					<div className={homeStyle['submit-btn']}>
-						<input type='submit' value='Submit' />
-					</div>
-				</form>
+				</div>
 			</div>
 		</>
 	);

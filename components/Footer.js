@@ -11,9 +11,15 @@ const Footer = () => {
 				</div>
 				<div className={footerStyle.links}>
 					<ul>
-						<li>home</li>
-						<li>about</li>
-						<li>contact</li>
+						<li>
+							<a href='#'>home</a>
+						</li>
+						<li>
+							<a href='#about'>about</a>
+						</li>
+						<li>
+							<a href='#contact'>contact</a>
+						</li>
 					</ul>
 				</div>
 				<div className={footerStyle['social-medias']}>

@@ -1,4 +1,5 @@
 import navbarStyle from '../styles/Navbar.module.scss';
+import { Link } from 'react-router-dom';
 
 const Navbar = () => {
 	return (
@@ -16,7 +17,7 @@ const Navbar = () => {
 							<a href='#about'>About</a>
 						</li>
 						<li>
-							<a href='#contact'>Contact</a>
+							<a href='#contact'>Contact Me</a>
 						</li>
 					</ul>
 				</div>
