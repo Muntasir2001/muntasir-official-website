@@ -20,6 +20,8 @@ export default function home() {
 	const handleSubmit = (e) => {
 		e.preventDefault();
 
+		alert('form submitted successfully');
+
 		const form = e.target;
 		console.log(form.getAttribute('name'));
 		fetch('/', {
