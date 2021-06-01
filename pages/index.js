@@ -1,7 +1,30 @@
 import Head from 'next/head';
+import { useState } from 'react';
 import homeStyle from '../styles/Home.module.scss';
 
 export default function home() {
+	const [info, setInfo] = useState({});
+
+	const handleChange = (e) => {
+		setInfo({ ...info, [e.target.name]: e.target.value });
+	};
+
+	const handleSubmit = (e) => {
+		e.preventDefault();
+
+		const form = e.target;
+		fetch('/', {
+			method: 'POST',
+			headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+			body: encodeURI({
+				'form-name': form.getAttribute('name'),
+				...info,
+			}),
+		})
+			.then(() => console.log('success'))
+			.catch((err) => console.log(err));
+	};
+
 	return (
 		<>
 			<Head>
@@ -34,7 +57,9 @@ export default function home() {
 					started when my father introduced Web Development to me back in
 					2017. Since then, I grew my skillsets, worked on couple of
 					personal projects and now, I work with a society in my university
-					as a Web Manager.
+					as a Web Manager. I have learned ReactJS, DiscordJS and NextJS
+					and worked on couple of projects with these langauges (project
+					section coming soon!)
 				</p>
 				<p className={homeStyle['second-para']}>
 					I love learning new technologies and enjoy trying out new
@@ -49,24 +74,41 @@ export default function home() {
 				<h1>contact me</h1>
 				<div className={homeStyle['red-underline']}></div>
 				<div className={homeStyle['contact-me-body']}>
-					<form>
+					<form
+						name='contact'
+						method='POST'
+						data-netlify='true'
+						onSubmit={handleSubmit}
+					>
+						{/* The `form-name` hidden field is required to support form submissions without JavaScript */}
+						<input type='hidden' name='contact' value='contact' />
+						<p hidden>
+							<label>
+								Don’t fill this out:{' '}
+								<input name='bot-field' onChange={handleChange} />
+							</label>
+						</p>
 						<div
 							className={`${homeStyle['name-field']} ${homeStyle['field']}`}
 						>
 							<label htmlFor='name'>Name</label>
-							<input type='text' />
+							<input type='text' name='name' onChange={handleChange} />
 						</div>
 						<div
 							className={`${homeStyle['email-field']} ${homeStyle['field']}`}
 						>
-							<label htmlFor='name'>Email</label>
-							<input type='email' />
+							<label htmlFor='email'>Email</label>
+							<input type='email' name='email' onChange={handleChange} />
 						</div>
 						<div
 							className={`${homeStyle['message-field']} ${homeStyle['field']}`}
 						>
 							<label htmlFor='name'>Message</label>
-							<textarea name='text' id=''></textarea>
+							<textarea
+								name='message'
+								id=''
+								onChange={handleChange}
+							></textarea>
 						</div>
 						<div className={homeStyle['submit-btn']}>
 							<input type='submit' value='Submit' />
