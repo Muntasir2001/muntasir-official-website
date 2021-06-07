@@ -6,7 +6,11 @@ const Footer = () => {
 			<footer className={footerStyle.footer}>
 				<div className={footerStyle.title}>
 					<a href='#'>
-						<h1>Noob Dev</h1>
+						{/* <h1>Noob Dev</h1> */}
+						<img
+							src='/noob_dev_final_cropped_transparent.svg'
+							alt='noob dev logo'
+						/>
 					</a>
 				</div>
 				<div className={footerStyle.links}>

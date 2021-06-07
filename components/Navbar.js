@@ -6,7 +6,13 @@ const Navbar = () => {
 		<>
 			<div className={navbarStyle.navbar}>
 				<div className={navbarStyle.logo}>
-					<h2>Noob Dev</h2>
+					{/* <h2>Noob Dev</h2> */}
+					<a href="'">
+						<img
+							src='/noob_dev_final_cropped_transparent.svg'
+							alt='noob dev logo'
+						/>
+					</a>
 				</div>
 				<div className={navbarStyle['navbar-items']}>
 					<ul>
