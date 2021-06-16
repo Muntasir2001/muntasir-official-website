@@ -33,10 +33,10 @@ const Footer = () => {
 					<a href='#'>
 						<img src='/insta-icon.svg' alt='Instagram icon' />
 					</a>
-					<a href='/'>
+					<a href='#'>
 						<img src='/linkedin-icon.svg' alt='LinkedIn icon' />
 					</a>
-					<a href='/'>
+					<a href='https://github.com/Muntasir2001' target='_blank'>
 						<img src='/github-icon.svg' alt='GitHub icon' />
 					</a>
 				</div>
