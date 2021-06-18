@@ -41,6 +41,12 @@ export default function home() {
 			<Head>
 				<title>Noob Dev</title>
 				<meta name='description' content='Official Website of Noob Dev' />
+				<link
+					rel='icon'
+					type='image/png'
+					sizes='32x32'
+					href='/favicon-32x32.png'
+				></link>
 			</Head>
 			<div className={homeStyle.hero}>
 				<div className={homeStyle.title}>
