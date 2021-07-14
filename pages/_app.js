@@ -12,7 +12,7 @@ function MyApp({ Component, pageProps }) {
 					type='image/png'
 					sizes='32x32'
 					href='/favicon/favicon-32x32.png'
-				></link>
+				/>
 				{/* <link
 					rel='icon'
 					type='image/png'

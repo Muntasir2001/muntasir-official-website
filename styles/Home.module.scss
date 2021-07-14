@@ -208,3 +208,37 @@
 		}
 	}
 }
+
+@media screen and (max-width: 1544px) {
+	.contact-me {
+		.contact-me-body {
+			form {
+				margin-right: 10px;
+
+				.field {
+					input {
+						margin-left: 100px;
+						width: 300px;
+					}
+
+					textarea {
+						margin-left: 75px;
+						min-width: 300px;
+						max-width: 300px;
+					}
+				}
+
+				.email-field {
+					input {
+						margin-left: 103px;
+					}
+				}
+			}
+
+			.sidebar {
+				// margin-right: 200px;
+				// margin-left: -400px;
+			}
+		}
+	}
+}
