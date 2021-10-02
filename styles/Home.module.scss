@@ -2,7 +2,7 @@
 	height: 10px;
 	background-color: #ff4454;
 	max-width: 100px;
-	margin: 0 140px;
+	// margin: 0 140px;
 }
 
 /* hero section */
@@ -18,7 +18,7 @@
 	.title {
 		// margin-top: 280px;
 		margin-top: -20px;
-		margin-left: 140px;
+		// margin-left: 140px;
 		display: flex;
 		flex-direction: column;
 		text-transform: uppercase;
@@ -30,7 +30,7 @@
 	}
 
 	.para {
-		margin-left: 140px;
+		// margin-left: 140px;
 		margin-top: 10px;
 
 		p {
@@ -45,20 +45,13 @@
 	color: #fff;
 	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 
-	.red-underline {
-		height: 10px;
-		background-color: #ff4454;
-		max-width: 100px;
-		margin: 0 140px;
-	}
-
 	h1 {
-		padding: 160px 140px 0 140px;
+		padding: 160px 0px 0 0px;
 		text-transform: uppercase;
 	}
 
 	.first-para {
-		padding: 50px 140px 0px 140px;
+		padding: 50px 0px 0px 0px;
 
 		span {
 			color: #ff4454;
@@ -66,7 +59,7 @@
 	}
 
 	.second-para {
-		padding: 15px 140px 180px 140px;
+		padding: 15px 0px 180px 0px;
 	}
 }
 
@@ -81,7 +74,7 @@
 
 	h1 {
 		text-transform: uppercase;
-		padding: 150px 140px 0 140px;
+		padding: 150px 0px 0 0px;
 	}
 
 	.contact-me-body {
@@ -89,7 +82,7 @@
 		justify-content: space-between;
 
 		form {
-			margin: 80px 140px 100px 140px;
+			margin: 80px 0px 100px 0px;
 
 			.field {
 				display: flex;
@@ -159,7 +152,7 @@
 
 		.sidebar {
 			background-color: #1b1c1e;
-			margin-right: 140px;
+			// margin-right: 140px;
 			// margin-left: 200px;
 			width: 350px;
 			max-height: 370px;
@@ -233,11 +226,6 @@
 						margin-left: 103px;
 					}
 				}
-			}
-
-			.sidebar {
-				// margin-right: 200px;
-				// margin-left: -400px;
 			}
 		}
 	}
