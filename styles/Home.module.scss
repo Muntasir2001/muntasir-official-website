@@ -206,7 +206,7 @@
 	.contact-me {
 		.contact-me-body {
 			form {
-				margin-right: 10px;
+				margin-right: 20px;
 
 				.field {
 					input {
@@ -224,6 +224,79 @@
 				.email-field {
 					input {
 						margin-left: 103px;
+					}
+				}
+			}
+		}
+	}
+}
+
+@media screen and (max-width: 1024px) {
+	.contact-me {
+		.contact-me-body {
+			form {
+				margin-right: 20px;
+
+				.field {
+					input {
+						margin-left: 50px;
+						width: 300px;
+					}
+
+					textarea {
+						margin-left: 25px;
+						min-width: 300px;
+						max-width: 300px;
+					}
+				}
+
+				.email-field {
+					input {
+						margin-left: 53px;
+					}
+				}
+			}
+
+			.sidebar {
+				width: 300px;
+				max-height: 370px;
+				display: flex;
+				flex-direction: column;
+
+				.title {
+					color: #fff;
+					text-transform: uppercase;
+					margin-top: 60px;
+					margin-left: 35px;
+
+					.red-underlines {
+						height: 7px;
+						background-color: #ff4454;
+						max-width: 100px;
+					}
+				}
+
+				ul {
+					list-style: none;
+					margin-left: 35px;
+					margin-top: 25px;
+
+					li {
+						padding: 15px 0;
+						display: flex;
+						align-items: center;
+
+						a {
+							display: flex;
+
+							img {
+								width: 30px;
+							}
+
+							p {
+								padding-left: 20px;
+							}
+						}
 					}
 				}
 			}
