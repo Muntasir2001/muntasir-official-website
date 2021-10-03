@@ -4,6 +4,7 @@
 	align-items: center;
 	justify-content: space-between;
 	background-color: #1b1c1e;
+	// position: relative;
 
 	.logo {
 		margin: 25px 0 25px 0px;
@@ -35,6 +36,37 @@
 					text-decoration: underline;
 				}
 			}
+		}
+	}
+
+	.hamburger-menu-icon {
+		display: none;
+	}
+}
+
+@media screen and (max-width: 780px) {
+	.navbar {
+		.logo {
+			margin: 25px 0 25px 0px;
+			color: #fff;
+
+			img {
+				width: 80px;
+			}
+		}
+
+		.navbar-items {
+			margin: 25px 0px 25px 0;
+			color: #fff;
+			text-transform: uppercase;
+
+			ul {
+				display: none;
+			}
+		}
+
+		.hamburger-menu-icon {
+			display: block;
 		}
 	}
 }

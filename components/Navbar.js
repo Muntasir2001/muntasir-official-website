@@ -1,10 +1,20 @@
+import { useState } from 'react';
+
 // import { Link } from 'react-router-dom';
 
+import MobileMenu from './MobileMenu';
 import { CommonLayout } from './Utils';
+import HamburgerMenuIcon from '../public/svg/HamburgerMenuIcon';
 
 import navbarStyle from '../styles/Navbar.module.scss';
 
 const Navbar = () => {
+	const [openMobileMenu, setOpenMobileMenu] = useState(false);
+
+	const setMenuState = () => {
+		setOpenMobileMenu((prev) => !prev);
+	};
+
 	return (
 		<>
 			<div className={navbarStyle.navbar}>
@@ -19,8 +29,8 @@ const Navbar = () => {
 						</a>
 					</div>
 				</CommonLayout>
-				<div className={navbarStyle['navbar-items']}>
-					<CommonLayout>
+				<CommonLayout>
+					<div className={navbarStyle['navbar-items']}>
 						<ul>
 							<li>
 								<a href='#'>Home</a>
@@ -32,8 +42,22 @@ const Navbar = () => {
 								<a href='#contact'>Contact Me</a>
 							</li>
 						</ul>
+					</div>
+				</CommonLayout>
+				<div
+					className={navbarStyle['hamburger-menu-icon']}
+					onClick={setMenuState}
+				>
+					<CommonLayout>
+						<HamburgerMenuIcon
+							width='30px'
+							height='30px'
+							color='#fff'
+							// onClick={setMenuState}
+						/>
 					</CommonLayout>
 				</div>
+				{openMobileMenu && <MobileMenu onClick={setMenuState} />}
 			</div>
 		</>
 	);
