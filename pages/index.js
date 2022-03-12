@@ -1,45 +1,12 @@
 import Head from 'next/head';
-import { useState } from 'react';
 
 import { CommonLayout } from '../components/Utilities/Utils';
-import ContactSidebar from '../components/ContactSidebar';
+// import ContactSidebar from '../components/ContactSection/ContactSidebar';
+import ContactForm from '../components/ContactSection/ContactForm';
 
 import style from '../styles/Home.module.scss';
 
-function encode(data) {
-	return Object.keys(data)
-		.map(
-			(key) => encodeURIComponent(key) + '=' + encodeURIComponent(data[key]),
-		)
-		.join('&');
-}
-
 export default function home() {
-	const [info, setInfo] = useState({});
-
-	const handleChange = (e) => {
-		setInfo({ ...info, [e.target.name]: e.target.value });
-	};
-
-	const handleSubmit = (e) => {
-		e.preventDefault();
-
-		alert('form submitted successfully');
-
-		const form = e.target;
-		console.log(form.getAttribute('name'));
-		fetch('/', {
-			method: 'POST',
-			headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
-			body: encode({
-				'form-name': form.getAttribute('name'),
-				...info,
-			}),
-		})
-			.then(() => console.log('success'))
-			.catch((err) => console.log(err));
-	};
-
 	return (
 		<>
 			<Head>
@@ -95,63 +62,7 @@ export default function home() {
 					</p>
 				</CommonLayout>
 			</div>
-			<div className={style['contact-me']} id='contact'>
-				<CommonLayout>
-					<h1>contact me</h1>
-					<div className={style['red-underline']}></div>
-					<div className={style['contact-me-body']}>
-						<form
-							name='contact'
-							method='POST'
-							data-netlify='true'
-							onSubmit={handleSubmit}
-						>
-							{/* The `form-name` hidden field is required to support form submissions without JavaScript */}
-							<input type='hidden' name='contact' value='contact' />
-							<p hidden>
-								<label>
-									Don’t fill this out:{' '}
-									<input name='bot-field' onChange={handleChange} />
-								</label>
-							</p>
-							<div
-								className={`${style['name-field']} ${style['field']}`}
-							>
-								<label htmlFor='name'>Name</label>
-								<input
-									type='text'
-									name='name'
-									onChange={handleChange}
-								/>
-							</div>
-							<div
-								className={`${style['email-field']} ${style['field']}`}
-							>
-								<label htmlFor='email'>Email</label>
-								<input
-									type='email'
-									name='email'
-									onChange={handleChange}
-								/>
-							</div>
-							<div
-								className={`${style['message-field']} ${style['field']}`}
-							>
-								<label htmlFor='name'>Message</label>
-								<textarea
-									name='message'
-									id=''
-									onChange={handleChange}
-								></textarea>
-							</div>
-							<div className={style['submit-btn']}>
-								<input type='submit' value='Submit' />
-							</div>
-						</form>
-						<ContactSidebar />
-					</div>
-				</CommonLayout>
-			</div>
+			<ContactForm />
 		</>
 	);
 }

@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import Link from 'next/link';
 
 // import { Link } from 'react-router-dom';
 
@@ -20,13 +21,12 @@ const Navbar = () => {
 			<div className={style.navbar}>
 				<CommonLayout>
 					<div className={style.logo}>
-						{/* <h2>Noob Dev</h2> */}
-						<a href="'">
+						<Link href='/'>
 							<img
 								src='/noob_dev_final_cropped_transparent.svg'
 								alt='noob dev logo'
 							/>
-						</a>
+						</Link>
 					</div>
 				</CommonLayout>
 				<CommonLayout>

@@ -24,4 +24,11 @@ export const RedUnderline = styled.div`
 	height: 7px;
 	background-color: #ff4454;
 	max-width: 100px;
+
+	/* small laptop screen */
+	@media screen and (max-width: 1024px) {
+		height: 7px;
+		background-color: #ff4454;
+		max-width: 100px;
+	}
 `;
