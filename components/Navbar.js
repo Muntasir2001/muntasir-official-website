@@ -6,7 +6,7 @@ import MobileMenu from './MobileMenu';
 import { CommonLayout } from './Utils';
 import HamburgerMenuIcon from '../public/svg/HamburgerMenuIcon';
 
-import navbarStyle from '../styles/Navbar.module.scss';
+import style from '../styles/Navbar.module.scss';
 
 const Navbar = () => {
 	const [openMobileMenu, setOpenMobileMenu] = useState(false);
@@ -17,9 +17,9 @@ const Navbar = () => {
 
 	return (
 		<>
-			<div className={navbarStyle.navbar}>
+			<div className={style.navbar}>
 				<CommonLayout>
-					<div className={navbarStyle.logo}>
+					<div className={style.logo}>
 						{/* <h2>Noob Dev</h2> */}
 						<a href="'">
 							<img
@@ -30,7 +30,7 @@ const Navbar = () => {
 					</div>
 				</CommonLayout>
 				<CommonLayout>
-					<div className={navbarStyle['navbar-items']}>
+					<div className={style['navbar-items']}>
 						<ul>
 							<li>
 								<a href='#'>Home</a>
@@ -45,7 +45,7 @@ const Navbar = () => {
 					</div>
 				</CommonLayout>
 				<div
-					className={navbarStyle['hamburger-menu-icon']}
+					className={style['hamburger-menu-icon']}
 					onClick={setMenuState}
 				>
 					<CommonLayout>
