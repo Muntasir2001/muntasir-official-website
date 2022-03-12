@@ -1,8 +1,7 @@
 import Head from 'next/head';
 
 import { CommonLayout } from '../components/Utilities/Utils';
-// import ContactSidebar from '../components/ContactSection/ContactSidebar';
-import ContactForm from '../components/ContactSection/ContactForm';
+import ContactSection from '../components/ContactSection/ContactSection';
 
 import style from '../styles/Home.module.scss';
 
@@ -62,7 +61,7 @@ export default function home() {
 					</p>
 				</CommonLayout>
 			</div>
-			<ContactForm />
+			<ContactSection />
 		</>
 	);
 }
