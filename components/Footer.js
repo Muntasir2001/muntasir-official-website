@@ -1,10 +1,16 @@
-import footerStyle from '../styles/Footer.module.scss';
+import InstagramIcon from '../public/social-media-icons/instagramSvg';
+import FacebookIcon from '../public/social-media-icons/facebookSvg';
+import LinkedinIcon from '../public/social-media-icons/linkedinSvg';
+import GithubIcon from '../public/other-icons/githubSvg';
+
+import style from '../styles/Footer.module.scss';
+import { Link } from 'react-router-dom';
 
 const Footer = () => {
 	return (
 		<>
-			<footer className={footerStyle.footer}>
-				<div className={footerStyle.title}>
+			<footer className={style.footer}>
+				<div className={style.title}>
 					<a href='#'>
 						{/* <h1>Noob Dev</h1> */}
 						<img
@@ -13,7 +19,7 @@ const Footer = () => {
 						/>
 					</a>
 				</div>
-				<div className={footerStyle.links}>
+				<div className={style.links}>
 					<ul>
 						<li>
 							<a href='#'>home</a>
@@ -26,21 +32,21 @@ const Footer = () => {
 						</li>
 					</ul>
 				</div>
-				<div className={footerStyle['social-medias']}>
+				<div className={style['social-medias']}>
 					<a href='#'>
-						<img src='/fb-icon.svg' alt='Facebook icon' />
+						<FacebookIcon width={25} height={25} />
 					</a>
 					<a href='#'>
-						<img src='/insta-icon.svg' alt='Instagram icon' />
+						<InstagramIcon width={25} height={25} />
 					</a>
 					<a href='#'>
-						<img src='/linkedin-icon.svg' alt='LinkedIn icon' />
+						<LinkedinIcon width={25} height={25} />
 					</a>
 					<a href='https://github.com/Muntasir2001' target='_blank'>
-						<img src='/github-icon.svg' alt='GitHub icon' />
+						<GithubIcon width={25} height={25} />
 					</a>
 				</div>
-				<div className={footerStyle.copyright}>
+				<div className={style.copyright}>
 					<p>Copyright ©2021 All rights reserved</p>
 				</div>
 			</footer>

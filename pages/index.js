@@ -1,7 +1,7 @@
 import Head from 'next/head';
 import { useState } from 'react';
 import { CommonLayout } from '../components/Utils';
-import homeStyle from '../styles/Home.module.scss';
+import style from '../styles/Home.module.scss';
 
 function encode(data) {
 	return Object.keys(data)
@@ -49,15 +49,15 @@ export default function home() {
 					href='/favicon-32x32.png'
 				></link>
 			</Head>
-			<div className={homeStyle.hero}>
+			<div className={style.hero}>
 				<CommonLayout>
-					<div className={homeStyle.title}>
+					<div className={style.title}>
 						<h1>hey,</h1>
 						<h1>
 							i am <span>Muntasir</span>
 						</h1>
 					</div>
-					<div className={homeStyle.para}>
+					<div className={style.para}>
 						<p>
 							an aspiring student who loves technology and working to be
 							a full stack developer.
@@ -65,11 +65,11 @@ export default function home() {
 					</div>
 				</CommonLayout>
 			</div>
-			<div className={homeStyle.about} id='about'>
+			<div className={style.about} id='about'>
 				<CommonLayout>
 					<h1>about me</h1>
-					<div className={homeStyle['red-underline']}></div>
-					<p className={homeStyle['first-para']}>
+					<div className={style['red-underline']}></div>
+					<p className={style['first-para']}>
 						Hi, I am <span>Muntasir</span> (aka noob_dev), self-taught
 						Front-end Web Developer and second year Undergrad Computer
 						Science student. For the past 2 years, I have been learning
@@ -82,7 +82,7 @@ export default function home() {
 						DiscordJS and NextJS and worked on couple of projects with
 						these langauges (project section coming soon!)
 					</p>
-					<p className={homeStyle['second-para']}>
+					<p className={style['second-para']}>
 						I love learning new technologies and enjoy trying out new
 						projects. Along with learning, I also love to teach other
 						people. Due to my pre-experience with coding, I found easy to
@@ -92,11 +92,11 @@ export default function home() {
 					</p>
 				</CommonLayout>
 			</div>
-			<div className={homeStyle['contact-me']} id='contact'>
+			<div className={style['contact-me']} id='contact'>
 				<CommonLayout>
 					<h1>contact me</h1>
-					<div className={homeStyle['red-underline']}></div>
-					<div className={homeStyle['contact-me-body']}>
+					<div className={style['red-underline']}></div>
+					<div className={style['contact-me-body']}>
 						<form
 							name='contact'
 							method='POST'
@@ -112,7 +112,7 @@ export default function home() {
 								</label>
 							</p>
 							<div
-								className={`${homeStyle['name-field']} ${homeStyle['field']}`}
+								className={`${style['name-field']} ${style['field']}`}
 							>
 								<label htmlFor='name'>Name</label>
 								<input
@@ -122,7 +122,7 @@ export default function home() {
 								/>
 							</div>
 							<div
-								className={`${homeStyle['email-field']} ${homeStyle['field']}`}
+								className={`${style['email-field']} ${style['field']}`}
 							>
 								<label htmlFor='email'>Email</label>
 								<input
@@ -132,7 +132,7 @@ export default function home() {
 								/>
 							</div>
 							<div
-								className={`${homeStyle['message-field']} ${homeStyle['field']}`}
+								className={`${style['message-field']} ${style['field']}`}
 							>
 								<label htmlFor='name'>Message</label>
 								<textarea
@@ -141,14 +141,14 @@ export default function home() {
 									onChange={handleChange}
 								></textarea>
 							</div>
-							<div className={homeStyle['submit-btn']}>
+							<div className={style['submit-btn']}>
 								<input type='submit' value='Submit' />
 							</div>
 						</form>
-						<div className={homeStyle.sidebar}>
-							<div className={homeStyle.title}>
+						<div className={style.sidebar}>
+							<div className={style.title}>
 								<h2>contact info</h2>
-								<div className={homeStyle['red-underlines']}></div>
+								<div className={style['red-underlines']}></div>
 							</div>
 							<ul>
 								<li>
