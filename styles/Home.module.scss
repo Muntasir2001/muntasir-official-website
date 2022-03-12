@@ -11,7 +11,9 @@
 	flex-direction: column;
 	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 	height: 94vh;
-	background: url('../public/nd_portfolio_hero_bkg.png') center center/cover;
+	background: url('../public/nd_new_bkg_grayed.png') center center/cover;
+	background-position: 10% 30%;
+	// background-size: 1920px 981px;
 	color: #fff;
 	justify-content: center;
 
@@ -153,191 +155,12 @@
 }
 
 @media screen and (max-width: 1544px) {
-	.contact-me {
-		.contact-me-body {
-			form {
-				margin-right: 20px;
-
-				.field {
-					input {
-						margin-left: 100px;
-						width: 300px;
-					}
-
-					textarea {
-						margin-left: 75px;
-						min-width: 300px;
-						max-width: 300px;
-					}
-				}
-
-				.email-field {
-					input {
-						margin-left: 103px;
-					}
-				}
-			}
-		}
-	}
 }
 
 /* small laptop screen */
 @media screen and (max-width: 1024px) {
-	.contact-me {
-		.contact-me-body {
-			form {
-				margin-right: 30px;
-
-				.field {
-					input {
-						margin-left: 50px;
-						width: 300px;
-					}
-
-					textarea {
-						margin-left: 25px;
-						min-width: 300px;
-						max-width: 300px;
-					}
-				}
-
-				.email-field {
-					input {
-						margin-left: 53px;
-					}
-				}
-			}
-
-			.sidebar {
-				width: 300px;
-				max-height: 370px;
-				display: flex;
-				flex-direction: column;
-
-				.title {
-					color: #fff;
-					text-transform: uppercase;
-					margin-top: 60px;
-					margin-left: 35px;
-
-					.red-underlines {
-						height: 7px;
-						background-color: #ff4454;
-						max-width: 100px;
-					}
-				}
-
-				ul {
-					list-style: none;
-					margin-left: 35px;
-					margin-top: 25px;
-
-					li {
-						padding: 15px 0;
-						display: flex;
-						align-items: center;
-
-						a {
-							display: flex;
-
-							img {
-								width: 30px;
-							}
-
-							p {
-								padding-left: 20px;
-							}
-						}
-					}
-				}
-			}
-		}
-	}
 }
 
 /* mobile */
 @media screen and (max-width: 780px) {
-	.contact-me {
-		h1 {
-			padding: 50px 0px 0 0px;
-		}
-
-		.contact-me-body {
-			flex-direction: column;
-			justify-content: center;
-
-			form {
-				margin: 50px 0px 50px 0px;
-
-				.field {
-					display: flex;
-					flex-direction: column;
-					align-items: flex-start;
-
-					input {
-						margin-left: 0px;
-						margin-top: 10px;
-						width: 100%;
-					}
-
-					textarea {
-						margin-left: 0px;
-						margin-top: 10px;
-						min-width: 350px;
-					}
-				}
-
-				.email-field {
-					input {
-						margin-left: 0px;
-					}
-				}
-			}
-
-			.sidebar {
-				width: 100%;
-				max-height: 380px;
-				flex-direction: column;
-				align-items: center;
-				padding: 50px 0;
-
-				.title {
-					color: #fff;
-					text-transform: uppercase;
-					margin-top: 0px;
-					margin-left: 0px;
-
-					.red-underlines {
-						height: 7px;
-						background-color: #ff4454;
-						max-width: 100px;
-					}
-				}
-
-				ul {
-					list-style: none;
-					margin-left: 35px;
-					margin-top: 25px;
-
-					li {
-						padding: 15px 0;
-						display: flex;
-						align-items: center;
-
-						a {
-							display: flex;
-
-							img {
-								width: 30px;
-							}
-
-							p {
-								padding-left: 20px;
-							}
-						}
-					}
-				}
-			}
-		}
-	}
 }
