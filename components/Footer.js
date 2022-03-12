@@ -4,7 +4,6 @@ import LinkedinIcon from '../public/social-media-icons/linkedinSvg';
 import GithubIcon from '../public/other-icons/githubSvg';
 
 import style from '../styles/Footer.module.scss';
-import { Link } from 'react-router-dom';
 
 const Footer = () => {
 	return (

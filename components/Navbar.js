@@ -3,7 +3,7 @@ import { useState } from 'react';
 // import { Link } from 'react-router-dom';
 
 import MobileMenu from './MobileMenu';
-import { CommonLayout } from './Utils';
+import { CommonLayout } from './Utilities/Utils';
 import HamburgerMenuIcon from '../public/svg/HamburgerMenuIcon';
 
 import style from '../styles/Navbar.module.scss';

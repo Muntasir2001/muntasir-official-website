@@ -19,3 +19,9 @@ export const CommonLayout = styled.div`
 		margin: 0 15px;
 	}
 `;
+
+export const RedUnderline = styled.div`
+	height: 7px;
+	background-color: #ff4454;
+	max-width: 100px;
+`;

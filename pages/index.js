@@ -1,6 +1,9 @@
 import Head from 'next/head';
 import { useState } from 'react';
-import { CommonLayout } from '../components/Utils';
+
+import { CommonLayout } from '../components/Utilities/Utils';
+import ContactSidebar from '../components/ContactSidebar';
+
 import style from '../styles/Home.module.scss';
 
 function encode(data) {
@@ -145,50 +148,7 @@ export default function home() {
 								<input type='submit' value='Submit' />
 							</div>
 						</form>
-						<div className={style.sidebar}>
-							<div className={style.title}>
-								<h2>contact info</h2>
-								<div className={style['red-underlines']}></div>
-							</div>
-							<ul>
-								<li>
-									<a
-										href='https://github.com/Muntasir2001'
-										target='_blank'
-									>
-										<img
-											src='/sidebar/github.svg'
-											alt='github logo'
-										/>
-										<p>Muntasir2001</p>
-									</a>
-								</li>
-								<li>
-									<a
-										href='https://discord.gg/vNe9QVrWNa'
-										target='_blank'
-									>
-										<img
-											src='/sidebar/discord.svg'
-											alt='discord logo'
-										/>
-										<p>Join my Discord server</p>
-									</a>
-								</li>
-								<li>
-									<a
-										href='https://www.instagram.com/noob_dev54/'
-										target='_blank'
-									>
-										<img
-											src='/sidebar/instagram.svg'
-											alt='instagram logo'
-										/>
-										<p>noob_dev54</p>
-									</a>
-								</li>
-							</ul>
-						</div>
+						<ContactSidebar />
 					</div>
 				</CommonLayout>
 			</div>
