@@ -39,8 +39,18 @@
 
 /* small laptop screen */
 @media screen and (max-width: 1024px) {
+	.hero {
+		.title {
+			font-size: 1.5rem;
+		}
+	}
 }
 
 /* mobile */
 @media screen and (max-width: 780px) {
+	.hero {
+		.title {
+			font-size: 1.2rem;
+		}
+	}
 }

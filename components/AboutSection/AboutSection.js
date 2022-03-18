@@ -18,10 +18,21 @@ const AboutSectionParent = styled.div`
 		span {
 			color: #ff4454;
 		}
+
+		@media screen and (max-width: 1024px) {
+			font-size: 1rem;
+		}
 	}
 
 	.second-para {
 		padding: 15px 0px 180px 0px;
+	}
+
+	@media screen and (max-width: 1024px) {
+		.first-para,
+		.second-para {
+			font-size: 1.1rem;
+		}
 	}
 `;
 
