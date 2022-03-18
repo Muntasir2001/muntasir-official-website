@@ -151,7 +151,8 @@ const ContactFormParent = styled.div`
 				textarea {
 					margin-left: 0px;
 					margin-top: 10px;
-					min-width: 350px;
+					/* min-width: 300px; */
+					max-width: 100%;
 				}
 			}
 

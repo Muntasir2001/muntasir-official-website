@@ -35,8 +35,12 @@ export default function home() {
 					</div>
 				</CommonLayout>
 			</div>
-			<AboutSection />
-			<ContactSection />
+			<div id='about'>
+				<AboutSection />
+			</div>
+			<div id='contact'>
+				<ContactSection />
+			</div>
 		</>
 	);
 }

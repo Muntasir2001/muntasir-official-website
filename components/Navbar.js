@@ -22,10 +22,12 @@ const Navbar = () => {
 				<CommonLayout>
 					<div className={style.logo}>
 						<Link href='/'>
-							<img
-								src='/noob_dev_final_cropped_transparent.svg'
-								alt='noob dev logo'
-							/>
+							<a>
+								<img
+									src='/noob_dev_final_cropped_transparent.svg'
+									alt='noob dev logo'
+								/>
+							</a>
 						</Link>
 					</div>
 				</CommonLayout>
