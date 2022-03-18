@@ -35,10 +35,10 @@ const Footer = () => {
 					<a href='#'>
 						<FacebookIcon width={25} height={25} />
 					</a>
-					<a href='#'>
+					<a href='https://www.instagram.com/noob_dev54/'>
 						<InstagramIcon width={25} height={25} />
 					</a>
-					<a href='#'>
+					<a href='https://www.linkedin.com/in/muntasir-enam-al-huda/'>
 						<LinkedinIcon width={25} height={25} />
 					</a>
 					<a href='https://github.com/Muntasir2001' target='_blank'>
