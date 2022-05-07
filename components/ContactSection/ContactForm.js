@@ -184,19 +184,6 @@ const ContactForm = () => {
 		e.preventDefault();
 
 		alert('form submitted successfully');
-
-		const form = e.target;
-		console.log(form.getAttribute('name'));
-		fetch('/', {
-			method: 'POST',
-			headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
-			body: encode({
-				'form-name': form.getAttribute('name'),
-				...info,
-			}),
-		})
-			.then(() => console.log('success'))
-			.catch((err) => console.log(err));
 	};
 
 	return (
@@ -205,17 +192,9 @@ const ContactForm = () => {
 				<form
 					name='contact'
 					method='POST'
-					data-netlify='true'
+					action='https://getform.io/f/868e81cc-9008-44fc-8639-da225ffd56b2'
 					onSubmit={handleSubmit}
 				>
-					{/* The `form-name` hidden field is required to support form submissions without JavaScript */}
-					<input type='hidden' name='contact' value='contact' />
-					<p hidden>
-						<label>
-							Don’t fill this out:{' '}
-							<input name='bot-field' onChange={handleChange} />
-						</label>
-					</p>
 					<div className='name-field field'>
 						<label htmlFor='name'>Name</label>
 						<input type='text' name='name' onChange={handleChange} />
