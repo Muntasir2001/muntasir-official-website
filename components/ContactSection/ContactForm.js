@@ -193,7 +193,7 @@ const ContactForm = () => {
 					name='contact'
 					method='POST'
 					action='https://getform.io/f/868e81cc-9008-44fc-8639-da225ffd56b2'
-					onSubmit={handleSubmit}
+					// onSubmit={handleSubmit}
 				>
 					<div className='name-field field'>
 						<label htmlFor='name'>Name</label>
