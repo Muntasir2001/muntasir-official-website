@@ -1,6 +1,6 @@
-import { useState } from 'react';
-
 import styled from 'styled-components';
+import { useForm } from 'react-hook-form';
+import toast, { Toaster } from 'react-hot-toast';
 
 const ContactFormParent = styled.div`
 	h1 {
@@ -165,54 +165,88 @@ const ContactFormParent = styled.div`
 	}
 `;
 
-function encode(data) {
-	return Object.keys(data)
-		.map(
-			(key) => encodeURIComponent(key) + '=' + encodeURIComponent(data[key]),
-		)
-		.join('&');
-}
-
 const ContactForm = () => {
-	const [info, setInfo] = useState({});
+	const {
+		register,
+		handleSubmit,
+		formState: { errors, isSubmitted },
+	} = useForm();
 
-	const handleChange = (e) => {
-		setInfo({ ...info, [e.target.name]: e.target.value });
+	const submit = async (data) => {
+		try {
+			await fetch(
+				'https://getform.io/f/868e81cc-9008-44fc-8639-da225ffd56b2',
+				{
+					method: 'POST',
+					body: JSON.stringify(data),
+					headers: {
+						'Content-Type': 'application/json',
+					},
+				},
+			).catch((err) => {
+				console.log('erro 1');
+				throw new Error(err);
+			});
+		} catch (error) {
+			throw new Error(error);
+		}
 	};
 
-	const handleSubmit = (e) => {
-		e.preventDefault();
-
-		alert('form submitted successfully');
+	const onSubmit = (data) => {
+		try {
+			toast.promise(
+				submit(data),
+				{
+					loading: 'Working on it',
+					success: 'Feedback submitted successfully',
+					error: 'Ooops!! Something went wrong',
+				},
+				{
+					duration: 8000,
+				},
+			);
+		} catch (error) {
+			console.log(error);
+			toast.error(error);
+		}
 	};
 
 	return (
 		<>
+			<Toaster />
 			<ContactFormParent>
 				<form
 					name='contact'
 					method='POST'
 					action='https://getform.io/f/868e81cc-9008-44fc-8639-da225ffd56b2'
-					// onSubmit={handleSubmit}
+					// onSubmit={handleSubmit(onSubmit)}
 				>
 					<div className='name-field field'>
 						<label htmlFor='name'>Name</label>
-						<input type='text' name='name' onChange={handleChange} />
+						<input
+							type='text'
+							name='name'
+							{...register('name', { required: true })}
+						/>
 					</div>
 					<div className='email-field field'>
 						<label htmlFor='email'>Email</label>
-						<input type='email' name='email' onChange={handleChange} />
+						<input
+							type='email'
+							name='email'
+							{...register('email', { required: true })}
+						/>
 					</div>
 					<div className='message-field field'>
 						<label htmlFor='name'>Message</label>
 						<textarea
 							name='message'
 							id=''
-							onChange={handleChange}
+							{...register('message', { required: true })}
 						></textarea>
 					</div>
 					<div className='submit-btn'>
-						<input type='submit' value='Submit' />
+						<input type='submit' value='Submit' disabled={isSubmitted} />
 					</div>
 				</form>
 			</ContactFormParent>
