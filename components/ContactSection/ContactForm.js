@@ -168,48 +168,9 @@ const ContactFormParent = styled.div`
 const ContactForm = () => {
 	const {
 		register,
-		handleSubmit,
-		formState: { errors, isSubmitted },
+		// handleSubmit,
+		formState: { isSubmitted },
 	} = useForm();
-
-	const submit = async (data) => {
-		try {
-			await fetch(
-				'https://getform.io/f/868e81cc-9008-44fc-8639-da225ffd56b2',
-				{
-					method: 'POST',
-					body: JSON.stringify(data),
-					headers: {
-						'Content-Type': 'application/json',
-					},
-				},
-			).catch((err) => {
-				console.log('erro 1');
-				throw new Error(err);
-			});
-		} catch (error) {
-			throw new Error(error);
-		}
-	};
-
-	const onSubmit = (data) => {
-		try {
-			toast.promise(
-				submit(data),
-				{
-					loading: 'Working on it',
-					success: 'Feedback submitted successfully',
-					error: 'Ooops!! Something went wrong',
-				},
-				{
-					duration: 8000,
-				},
-			);
-		} catch (error) {
-			console.log(error);
-			toast.error(error);
-		}
-	};
 
 	return (
 		<>
@@ -219,7 +180,6 @@ const ContactForm = () => {
 					name='contact'
 					method='POST'
 					action='https://getform.io/f/868e81cc-9008-44fc-8639-da225ffd56b2'
-					// onSubmit={handleSubmit(onSubmit)}
 				>
 					<div className='name-field field'>
 						<label htmlFor='name'>Name</label>
