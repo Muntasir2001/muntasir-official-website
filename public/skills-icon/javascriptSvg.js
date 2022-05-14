@@ -3,9 +3,9 @@ import React from 'react';
 const JavaScriptIcon = ({ width, height, color }) => {
 	return (
 		<svg
-			height={width}
+			height={height}
 			viewBox='0 0 512 512'
-			width='512'
+			width={width}
 			xmlns='http://www.w3.org/2000/svg'
 		>
 			<title />
