@@ -1,16 +1,11 @@
 import styled from 'styled-components';
 
-import { CommonLayout, RedUnderline } from '../Utilities/Utils';
+import { CommonLayout, RedUnderline, SectionTitle } from '../Utilities/Utils';
 
 const AboutSectionParent = styled.div`
 	background-color: #1b1c1e;
 	color: #fff;
 	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-
-	h1 {
-		padding: 160px 0px 0 0px;
-		text-transform: uppercase;
-	}
 
 	.first-para {
 		padding: 50px 0px 0px 0px;
@@ -41,7 +36,7 @@ const AboutSection = () => {
 		<>
 			<AboutSectionParent>
 				<CommonLayout>
-					<h1>about me</h1>
+					<SectionTitle>about me</SectionTitle>
 					<RedUnderline />
 					<p className='first-para'>
 						Hi, I am <span>Muntasir</span> (aka noob_dev), self-taught

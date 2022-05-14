@@ -32,3 +32,12 @@ export const RedUnderline = styled.div`
 		max-width: 100px;
 	}
 `;
+
+export const SectionTitle = styled.h1`
+	text-transform: uppercase;
+	padding: 150px 0px 0 0px;
+
+	@media screen and (max-width: 780px) {
+		padding: 50px 0px 0 0px;
+	}
+`;
