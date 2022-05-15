@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 
-import { RedUnderline, CommonLayout, SectionTitle } from '../Utilities/Utils';
+import { CommonLayout, RedUnderline, SectionTitle } from '../Utilities/Utils';
 
 const SkillsParent = styled.div``;
 
@@ -8,8 +8,10 @@ const Skills = () => {
 	return (
 		<>
 			<SkillsParent>
-				<SectionTitle>Skills</SectionTitle>
-				<RedUnderline />
+				<CommonLayout>
+					<SectionTitle>Skills</SectionTitle>
+					<RedUnderline />
+				</CommonLayout>
 			</SkillsParent>
 		</>
 	);

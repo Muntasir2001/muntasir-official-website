@@ -3,10 +3,6 @@ import styled from 'styled-components';
 import { CommonLayout, RedUnderline, SectionTitle } from '../Utilities/Utils';
 
 const AboutSectionParent = styled.div`
-	background-color: #1b1c1e;
-	color: #fff;
-	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-
 	.first-para {
 		padding: 50px 0px 0px 0px;
 
@@ -20,7 +16,7 @@ const AboutSectionParent = styled.div`
 	}
 
 	.second-para {
-		padding: 15px 0px 180px 0px;
+		padding: 15px 0px 0 0px;
 	}
 
 	@media screen and (max-width: 1024px) {

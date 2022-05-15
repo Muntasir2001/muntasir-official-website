@@ -41,3 +41,13 @@ export const SectionTitle = styled.h1`
 		padding: 50px 0px 0 0px;
 	}
 `;
+
+export const BlackBkgSection = styled.div`
+	background-color: #1b1c1e;
+	color: #fff;
+	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+	padding: 60px 0px 60px 0px;
+
+	.second {
+	}
+`;

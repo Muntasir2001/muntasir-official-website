@@ -1,8 +1,9 @@
 import Head from 'next/head';
 
-import { CommonLayout } from '../components/Utilities/Utils';
+import { CommonLayout, BlackBkgSection } from '../components/Utilities/Utils';
 import ContactSection from '../components/ContactSection/ContactSection';
 import AboutSection from '../components/AboutSection/AboutSection';
+import Skills from '../components/Skills/Skills';
 
 import style from '../styles/Home.module.scss';
 
@@ -35,9 +36,14 @@ export default function home() {
 					</div>
 				</CommonLayout>
 			</div>
-			<div id='about'>
-				<AboutSection />
-			</div>
+			<BlackBkgSection>
+				<div id='about'>
+					<AboutSection />
+				</div>
+				<div id='skills'>
+					<Skills />
+				</div>
+			</BlackBkgSection>
 			<div id='contact'>
 				<ContactSection />
 			</div>
