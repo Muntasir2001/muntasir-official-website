@@ -33,20 +33,28 @@ export const RedUnderline = styled.div`
 	}
 `;
 
-export const SectionTitle = styled.h1`
-	text-transform: uppercase;
-	padding: 150px 0px 0 0px;
+export const SectionDiv = styled.div`
+	padding: 0px 0px 150px 0px;
 
 	@media screen and (max-width: 780px) {
-		padding: 50px 0px 0 0px;
+		padding: 0px 0px 50px 0px;
 	}
+`;
+
+export const SectionTitleDiv = styled.div`
+	display: flex;
+	flex-direction: column;
+`;
+
+export const SectionTitle = styled.h1`
+	text-transform: uppercase;
 `;
 
 export const BlackBkgSection = styled.div`
 	background-color: #1b1c1e;
 	color: #fff;
 	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-	padding: 60px 0px 60px 0px;
+	padding: 100px 0px 100px 0px;
 
 	.second {
 	}

@@ -1,6 +1,12 @@
 import styled from 'styled-components';
 
-import { CommonLayout, RedUnderline, SectionTitle } from '../Utilities/Utils';
+import {
+	CommonLayout,
+	RedUnderline,
+	SectionTitle,
+	SectionTitleDiv,
+	SectionDiv,
+} from '../Utilities/Utils';
 
 const SkillsParent = styled.div``;
 
