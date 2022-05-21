@@ -4,14 +4,14 @@ const ReactjsIcon = ({ width, height, color }) => {
 	return (
 		<svg
 			height={height}
-			style='fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;'
-			version='1.1'
-			viewBox='0 0 128 128'
 			width={width}
-			xml:space='preserve'
-			xmlns='http://www.w3.org/2000/svg'
-			xmlns:serif='http://www.serif.com/'
-			xmlns:xlink='http://www.w3.org/1999/xlink'
+			// style='fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;'
+			// version='1.1'
+			// viewBox='0 0 128 128'
+			// xml:space='preserve'
+			// xmlns='http://www.w3.org/2000/svg'
+			// xmlns:serif='http://www.serif.com/'
+			// xmlns:xlink='http://www.w3.org/1999/xlink'
 		>
 			<g transform='matrix(1.25305,0,0,1.25305,-16.3076,4.57191)'>
 				<circle cx='64' cy='47.5' r='9.3' style='fill:rgb(97,218,251);' />

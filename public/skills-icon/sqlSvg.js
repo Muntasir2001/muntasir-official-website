@@ -7,19 +7,19 @@ const SqlIcon = ({ width, height, color }) => {
 			version='1.1'
 			viewBox='0 0 32 32'
 			width={width}
-			xmlns='http://www.w3.org/2000/svg'
-			xmlns:sketch='http://www.bohemiancoding.com/sketch/ns'
-			xmlns:xlink='http://www.w3.org/1999/xlink'
+			// xmlns='http://www.w3.org/2000/svg'
+			// xmlns:sketch='http://www.bohemiancoding.com/sketch/ns'
+			// xmlns:xlink='http://www.w3.org/1999/xlink'
 		>
 			<title />
 			<desc />
 			<defs />
 			<g
 				fill='none'
-				fill-rule='evenodd'
+				fillRule='evenodd'
 				id='Page-1'
 				stroke='none'
-				stroke-width='1'
+				strokeWidth='1'
 			>
 				<g fill='#157EFB' id='icon-89-document-file-sql'>
 					<path

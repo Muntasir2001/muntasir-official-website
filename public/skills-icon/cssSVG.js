@@ -3,15 +3,15 @@ import React from 'react';
 const CssIcon = ({ width, height, color }) => {
 	return (
 		<svg
-			enable-background='new 0 0 32 32'
+			// enable-background='new 0 0 32 32'
 			height={height}
 			id='Layer_1'
 			version='1.0'
 			viewBox='0 0 32 32'
 			width={width}
-			xml:space='preserve'
-			xmlns='http://www.w3.org/2000/svg'
-			xmlns:xlink='http://www.w3.org/1999/xlink'
+			// xml:space='preserve'
+			// xmlns='http://www.w3.org/2000/svg'
+			// xmlns:xlink='http://www.w3.org/1999/xlink'
 		>
 			<g>
 				<polygon
