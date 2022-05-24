@@ -3,7 +3,7 @@ import Head from 'next/head';
 import { CommonLayout, BlackBkgSection } from '../components/Utilities/Utils';
 import ContactSection from '../components/ContactSection/ContactSection';
 import AboutSection from '../components/AboutSection/AboutSection';
-import Skills from '../components/Skills/Skills';
+import Skills from '../components/SkillsSection/Skills';
 
 import style from '../styles/Home.module.scss';
 
