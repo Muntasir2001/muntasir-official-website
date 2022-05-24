@@ -9,6 +9,7 @@ import {
 } from '../Utilities/Utils';
 
 import LanguagesSection from './LanguagesSection';
+import FrameworksSection from './FrameworksSection';
 
 const SkillsParent = styled.div`
 	.languages-div {
@@ -29,7 +30,9 @@ const Skills = () => {
 						<div className='languages-div'>
 							<LanguagesSection />
 						</div>
-						<div className='frameworks-div'></div>
+						<div className='frameworks-div'>
+							<FrameworksSection />
+						</div>
 					</SectionDiv>
 				</CommonLayout>
 			</SkillsParent>

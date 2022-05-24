@@ -3,7 +3,7 @@ import React from 'react';
 const NextjsIcon = ({ width, height, color }) => {
 	return (
 		<svg
-			fill='none'
+			fill='#fff'
 			height={height}
 			viewBox='0 0 15 15'
 			width={width}
