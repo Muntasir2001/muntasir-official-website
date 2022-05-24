@@ -9,7 +9,7 @@ import {
 } from '../Utilities/Utils';
 
 import JavaScriptIcon from '../../public/skills-icon/javascriptSvg';
-import PythonIcon from '../../public/skills-icon/PythonSvg';
+import PythonIcon from '../../public/skills-icon/pythonSvg';
 import SqlIcon from '../../public/skills-icon/sqlSvg';
 import HtmlIcon from '../../public/skills-icon/htmlSvg';
 import CssIcon from '../../public/skills-icon/cssSvg';
