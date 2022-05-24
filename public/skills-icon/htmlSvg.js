@@ -1,6 +1,6 @@
 import React from 'react';
 
-const CssIcon = ({ width, height, color }) => {
+const HtmlIcon = ({ width, height, color }) => {
 	return (
 		<svg
 			// enable-background='new 0 0 32 32'
@@ -15,16 +15,16 @@ const CssIcon = ({ width, height, color }) => {
 		>
 			<g>
 				<polygon
-					fill='#1F62AE'
+					fill='#E44D26'
 					points='27.377,28.889 16.001,32 4.625,28.889 2,0 30.002,0  '
 				/>
 				<polygon
-					fill='#347DC6'
+					fill='#FF6C39'
 					points='16,2 16,29.75 25.232,27.008 27.688,2  '
 				/>
 				<polygon
 					fill='#FFFFFF'
-					points='24.363,6 7.607,6 8,10 16,10 8.25,12.99 8.619,17 19.502,17 19.158,21 16,21.99 12.861,20.984    12.533,19 8.803,19 9.262,23.987 16,25.99 22.728,23.986 23.719,12.99 16.026,12.99 24,10  '
+					points='24.363,6 7.607,6 8,10 8.619,17 19.503,17 19.148,20.984 16,21.99 12.857,20.984 12.648,19    8.803,19 9.262,23.987 16,25.99 22.728,23.986 23.718,13 12.252,13 12.002,10 24,10  '
 				/>
 			</g>
 			<g />
@@ -37,9 +37,9 @@ const CssIcon = ({ width, height, color }) => {
 	);
 };
 
-export default CssIcon;
+export default HtmlIcon;
 
-CssIcon.defaultProps = {
+HtmlIcon.defaultProps = {
 	width: '32px',
 	height: '32px',
 };
