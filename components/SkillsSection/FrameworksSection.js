@@ -4,7 +4,7 @@ import ReactjsIcon from '../../public/skills-icon/reactjsIcon.svg';
 import NextjsIcon from '../../public/skills-icon/nextjsSvg';
 // import ExpressIcon from '../../public/skills-icon/expressjsSvg';
 // import FlaskIcon from '../../public/skills-icon/flaskIcon.svg';
-// import NodejsIcon from '../../public/skills-icon/nodejsIcon.svg';
+import NodejsIcon from '../../public/skills-icon/nodejsIcon.svg';
 
 const FrameworksSectionParent = styled.div`
 	.icon-list {
@@ -26,10 +26,11 @@ const FrameworksSection = () => {
 	return (
 		<>
 			<FrameworksSectionParent width={width} height={height}>
-				<h3>Languages</h3>
+				<h3>Frameworks</h3>
 				<div className='icon-list'>
 					<ReactjsIcon />
 					<NextjsIcon width={width} height={height} />
+					<NodejsIcon />
 				</div>
 			</FrameworksSectionParent>
 		</>
