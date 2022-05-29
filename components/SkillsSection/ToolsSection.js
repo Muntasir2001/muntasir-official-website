@@ -17,9 +17,20 @@ const ToolsSectionParent = styled.div`
 
 const SvgIcon = styled.div`
 	svg {
-		margin-right: 15px;
+		margin-right: ${(props) =>
+			props.marginRight ? props.marginRight : '15px'};
 		width: ${(props) => (props.width ? props.width : '')};
 		height: ${(props) => (props.height ? props.height : '')};
+	}
+
+	/* mobile */
+	@media screen and (max-width: 780px) {
+		svg {
+			width: 40px;
+			height: 40px;
+			margin-right: ${(props) =>
+				props.marginRight ? props.marginRight : '15px'};
+		}
 	}
 `;
 

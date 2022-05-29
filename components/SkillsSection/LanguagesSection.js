@@ -13,6 +13,8 @@ const LanguagesSectionParent = styled.div`
 
 		svg {
 			margin-right: 15px;
+			width: ${(props) => (props.resWidth ? props.resWidth : '')};
+			height: ${(props) => (props.resHeight ? props.resHeight : '')};
 		}
 	}
 `;
@@ -20,12 +22,18 @@ const LanguagesSectionParent = styled.div`
 const LanguagesSection = () => {
 	const width = '50px';
 	const height = '50px';
+	const resWidth = '35px';
+	const resHeight = '35px';
 
 	return (
 		<>
 			<LanguagesSectionParent>
 				<h3>Languages</h3>
-				<div className='icon-list'>
+				<div
+					className='icon-list'
+					resWidth={resWidth}
+					resHeight={resHeight}
+				>
 					<JavaScriptIcon height={height} width={width} />
 					<PythonIcon width={width} height={height} />
 					<SqlIcon width={width} height={height} />
