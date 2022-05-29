@@ -2,20 +2,32 @@ import styled from 'styled-components';
 
 import ReactjsIcon from '../../public/skills-icon/reactjsIcon.svg';
 import NextjsIcon from '../../public/skills-icon/nextjsSvg';
-// import ExpressIcon from '../../public/skills-icon/expressjsSvg';
-// import FlaskIcon from '../../public/skills-icon/flaskIcon.svg';
+import ExpressIcon from '../../public/skills-icon/expressjsIcon.svg';
+import FlaskIcon from '../../public/skills-icon/flaskIcon.svg';
 import NodejsIcon from '../../public/skills-icon/nodejsIcon.svg';
 
 const FrameworksSectionParent = styled.div`
+	margin-top: 40px;
+
 	.icon-list {
 		display: flex;
 		margin-top: 25px;
+		align-items: center;
+	}
+`;
 
-		svg {
-			margin-right: 15px;
-			width: ${(props) => (props.width ? props.width : '')};
-			height: ${(props) => (props.height ? props.height : '')};
-		}
+const SvgIcon = styled.div`
+	svg {
+		margin-right: 15px;
+		width: ${(props) => (props.width ? props.width : '')};
+		height: ${(props) => (props.height ? props.height : '')};
+	}
+`;
+
+const NodejsSvgIcon = styled.div`
+	svg {
+		width: ${(props) => (props.width ? props.width : '')};
+		height: ${(props) => (props.height ? props.height : '')};
 	}
 `;
 
@@ -25,12 +37,24 @@ const FrameworksSection = () => {
 
 	return (
 		<>
-			<FrameworksSectionParent width={width} height={height}>
+			<FrameworksSectionParent>
 				<h3>Frameworks</h3>
 				<div className='icon-list'>
-					<ReactjsIcon />
-					<NextjsIcon width={width} height={height} />
-					<NodejsIcon />
+					<SvgIcon width={width} height={height}>
+						<ReactjsIcon />
+					</SvgIcon>
+					<SvgIcon width={width} height={height}>
+						<NextjsIcon width={width} height={height} />
+					</SvgIcon>
+					<NodejsSvgIcon width={'100px'} height={'55px'}>
+						<NodejsIcon />
+					</NodejsSvgIcon>
+					<SvgIcon>
+						<ExpressIcon />
+					</SvgIcon>
+					<SvgIcon>
+						<FlaskIcon />
+					</SvgIcon>
 				</div>
 			</FrameworksSectionParent>
 		</>
