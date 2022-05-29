@@ -5,6 +5,7 @@ import NextjsIcon from '../../public/skills-icon/nextjsSvg';
 import ExpressIcon from '../../public/skills-icon/expressjsIcon.svg';
 import FlaskIcon from '../../public/skills-icon/flaskIcon.svg';
 import NodejsIcon from '../../public/skills-icon/nodejsIcon.svg';
+import DiscordjsIcon from '../../public/skills-icon/discordjsIcon.svg';
 
 const FrameworksSectionParent = styled.div`
 	margin-top: 40px;
@@ -26,6 +27,14 @@ const SvgIcon = styled.div`
 
 const NodejsSvgIcon = styled.div`
 	svg {
+		width: ${(props) => (props.width ? props.width : '')};
+		height: ${(props) => (props.height ? props.height : '')};
+	}
+`;
+
+const DiscordjsSvgIcon = styled.div`
+	svg {
+		margin-right: 15px;
 		width: ${(props) => (props.width ? props.width : '')};
 		height: ${(props) => (props.height ? props.height : '')};
 	}
@@ -55,6 +64,9 @@ const FrameworksSection = () => {
 					<SvgIcon>
 						<FlaskIcon />
 					</SvgIcon>
+					<DiscordjsSvgIcon width='120px' height='55px'>
+						<DiscordjsIcon />
+					</DiscordjsSvgIcon>
 				</div>
 			</FrameworksSectionParent>
 		</>
