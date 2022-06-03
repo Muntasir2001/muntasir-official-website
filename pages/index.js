@@ -4,6 +4,7 @@ import { CommonLayout, BlackBkgSection } from '../components/Utilities/Utils';
 import ContactSection from '../components/ContactSection/ContactSection';
 import AboutSection from '../components/AboutSection/AboutSection';
 import Skills from '../components/SkillsSection/Skills';
+import FeaturedProjectsSection from '../components/FeaturedProjectsSection/FeaturedProjectsSection';
 
 import style from '../styles/Home.module.scss';
 
@@ -42,6 +43,9 @@ export default function home() {
 				</div>
 				<div id='skills'>
 					<Skills />
+				</div>
+				<div className='featured-projects'>
+					<FeaturedProjectsSection />
 				</div>
 			</BlackBkgSection>
 			<div id='contact'>

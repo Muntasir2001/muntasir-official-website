@@ -34,7 +34,7 @@ export const RedUnderline = styled.div`
 `;
 
 export const SectionDiv = styled.div`
-	padding: 0px 0px 150px 0px;
+	padding: 0px 0px 100px 0px;
 
 	@media screen and (max-width: 780px) {
 		padding: 0px 0px 50px 0px;
