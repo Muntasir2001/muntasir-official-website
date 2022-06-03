@@ -5,13 +5,15 @@ import FolderIcon from '../../public/other-icons/folderSvg';
 import LinkIcon from '../../public/other-icons/linkIconSvg';
 
 const FeaturedProjectCardParent = styled.div`
-	width: 600px;
+	/* width: 600px; */
+	padding: 50px;
 	background-color: #313234;
+	display: flex;
+	flex-direction: column;
 
 	.top-part {
 		display: flex;
 		justify-content: space-between;
-		padding: 50px;
 
 		.top-part-left {
 		}
@@ -21,10 +23,53 @@ const FeaturedProjectCardParent = styled.div`
 			flex-direction: column;
 		}
 	}
+
+	.bottom-part {
+		margin-top: -12px;
+
+		.description {
+			margin-top: 10px;
+			font-size: 1rem;
+		}
+
+		.tags {
+			display: flex;
+			margin-top: 30px;
+
+			p {
+				font-size: 0.85rem;
+			}
+
+			.later {
+				margin-left: 10px;
+			}
+		}
+	}
+
+	/* mobile */
+	@media screen and (max-width: 780px) {
+		padding: 20px;
+
+		.bottom-part {
+			.title {
+				font-size: 1.4rem;
+			}
+
+			.description {
+				font-size: 0.9rem;
+			}
+
+			.tags {
+				p {
+					font-size: 0.75rem;
+				}
+			}
+		}
+	}
 `;
 
 const FeaturedProjectCard = (props) => {
-	const { name, link, title, description } = props;
+	const { name, link, title, description, tags } = props;
 
 	const width = '33px';
 	const height = '33px';
@@ -43,6 +88,19 @@ const FeaturedProjectCard = (props) => {
 						<a href='#'>
 							<LinkIcon width={width} height={height} marginTop='15px' />
 						</a>
+					</div>
+				</div>
+				<div className='bottom-part'>
+					<h2 className='title'>Github Profile Viewer</h2>
+					<p className='description'>
+						Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt
+						deserunt eaque accusamus iste rerum, blanditiis reprehenderit.
+						Eveniet repellat atque quos!
+					</p>
+					<div className='tags'>
+						<p>Javascript</p>
+						<p className='later'>HTML</p>
+						<p className='later'>CSS</p>
 					</div>
 				</div>
 			</FeaturedProjectCardParent>

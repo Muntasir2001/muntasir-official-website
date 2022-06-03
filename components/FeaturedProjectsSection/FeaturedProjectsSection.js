@@ -11,8 +11,15 @@ import FeaturedProjectCard from './FeaturedProjectCard';
 
 const FeaturedProjectsSectionParent = styled.div`
 	.project-cards {
-		display: flex;
+		display: grid;
+		gap: 20px;
 		margin-top: 40px;
+		grid-template-columns: 1fr 1fr;
+
+		/* mobile */
+		@media screen and (max-width: 780px) {
+			grid-template-columns: 1fr;
+		}
 	}
 `;
 
@@ -26,6 +33,9 @@ const FeaturedProjectsSection = () => {
 							<SectionTitle>Featured Projects</SectionTitle>
 							<RedUnderline />
 							<div className='project-cards'>
+								<FeaturedProjectCard />
+								<FeaturedProjectCard />
+								<FeaturedProjectCard />
 								<FeaturedProjectCard />
 							</div>
 						</SectionTitleDiv>
