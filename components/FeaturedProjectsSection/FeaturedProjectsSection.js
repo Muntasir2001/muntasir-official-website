@@ -9,6 +9,8 @@ import {
 } from '../Utilities/Utils';
 import FeaturedProjectCard from './FeaturedProjectCard';
 
+import featuredProjects from '../../data/featuredProjects.json';
+
 const FeaturedProjectsSectionParent = styled.div`
 	.project-cards {
 		display: grid;
@@ -24,6 +26,8 @@ const FeaturedProjectsSectionParent = styled.div`
 `;
 
 const FeaturedProjectsSection = () => {
+	console.log(featuredProjects);
+
 	return (
 		<>
 			<FeaturedProjectsSectionParent>
@@ -33,10 +37,21 @@ const FeaturedProjectsSection = () => {
 							<SectionTitle>Featured Projects</SectionTitle>
 							<RedUnderline />
 							<div className='project-cards'>
+								{featuredProjects.projects.map((data) => {
+									return (
+										<FeaturedProjectCard
+											title={data.title}
+											description={data.description}
+											websiteLink={data.websiteLink}
+											githubLink={data.githubLink}
+											tags={data.tags}
+										/>
+									);
+								})}
+								{/* 
 								<FeaturedProjectCard />
 								<FeaturedProjectCard />
-								<FeaturedProjectCard />
-								<FeaturedProjectCard />
+								<FeaturedProjectCard /> */}
 							</div>
 						</SectionTitleDiv>
 					</SectionDiv>

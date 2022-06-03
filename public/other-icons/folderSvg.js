@@ -21,9 +21,9 @@ const FolderIcon = ({ width, height, color, marginTop }) => {
 				transform='translate(-1 -2)'
 				fill='none'
 				stroke='#ff4454'
-				stroke-linecap='round'
-				stroke-linejoin='round'
-				stroke-width='4'
+				strokeLinecap='round'
+				strokeLinejoin='round'
+				strokeWidth='4'
 			/>
 		</Svg>
 	);

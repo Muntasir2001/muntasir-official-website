@@ -26,10 +26,15 @@ const FeaturedProjectCardParent = styled.div`
 
 	.bottom-part {
 		margin-top: -12px;
+		display: flex;
+		flex-direction: column;
+		/* justify-content: space-between; */
+		height: 100%;
 
 		.description {
 			margin-top: 10px;
 			font-size: 1rem;
+			margin-bottom: auto;
 		}
 
 		.tags {
@@ -38,10 +43,7 @@ const FeaturedProjectCardParent = styled.div`
 
 			p {
 				font-size: 0.85rem;
-			}
-
-			.later {
-				margin-left: 10px;
+				margin-right: 10px;
 			}
 		}
 	}
@@ -69,7 +71,7 @@ const FeaturedProjectCardParent = styled.div`
 `;
 
 const FeaturedProjectCard = (props) => {
-	const { name, link, title, description, tags } = props;
+	const { websiteLink, title, description, tags, githubLink } = props;
 
 	const width = '33px';
 	const height = '33px';
@@ -82,25 +84,21 @@ const FeaturedProjectCard = (props) => {
 						<FolderIcon width={width} height={height} />
 					</div>
 					<div className='top-part-right'>
-						<a href='#'>
+						<a href={githubLink} target='_blank'>
 							<GithubIcon width={width} height={height} />
 						</a>
-						<a href='#'>
+						<a href={websiteLink} target='_blank'>
 							<LinkIcon width={width} height={height} marginTop='15px' />
 						</a>
 					</div>
 				</div>
 				<div className='bottom-part'>
-					<h2 className='title'>Github Profile Viewer</h2>
-					<p className='description'>
-						Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt
-						deserunt eaque accusamus iste rerum, blanditiis reprehenderit.
-						Eveniet repellat atque quos!
-					</p>
+					<h2 className='title'>{title}</h2>
+					<p className='description'>{description}</p>
 					<div className='tags'>
-						<p>Javascript</p>
-						<p className='later'>HTML</p>
-						<p className='later'>CSS</p>
+						{tags.map((tag) => {
+							return <p>{tag}</p>;
+						})}
 					</div>
 				</div>
 			</FeaturedProjectCardParent>

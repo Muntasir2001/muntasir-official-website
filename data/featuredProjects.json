@@ -1,0 +1,46 @@
+{
+	"projects": [
+		{
+			"title": "Connect Me",
+			"description": "A chat application created with React.js and Firebase with sole objective to learn more about React.js and how firebase works with React.js.",
+			"websiteLink": "https://connectme.netlify.app/",
+			"githubLink": "https://github.com/Muntasir2001/connect-me",
+			"tags": ["ReactJS", "Firebase", "CSS"]
+		},
+		{
+			"title": "Calculator",
+			"description": "This is a challenge that I am doing from this website: https://www.frontendmentor.io/challenges/calculator-app-9lteq5N29",
+			"websiteLink": "https://noobcalculator.netlify.app/",
+			"githubLink": "https://github.com/Muntasir2001/calculator",
+			"tags": ["ReactJS", "JSS"]
+		},
+		{
+			"title": "Github User Finder",
+			"description": "This project is about creating an Web Application which would allow to find users on GitHub. This project was created from the reference of Brad Traversy JavaScript Course on Udemy. The background colour is the same as GitHub dark theme colour. All the designs were made using custom code with minimum usage of Skeleton and Bootstrap.",
+			"websiteLink": "https://muntasir2001.github.io/github-user-finder/",
+			"githubLink": "https://github.com/Muntasir2001/github-user-finder",
+			"tags": ["HTML", "CSS", "JavaScript"]
+		},
+		{
+			"title": "Dinosaur game",
+			"description": "A fun little browser based dinosaur game.",
+			"websiteLink": "https://noob-dinosaur.netlify.app/",
+			"githubLink": "https://github.com/Muntasir2001/dinosaur-game",
+			"tags": ["HTML", "CSS", "JavaScript"]
+		},
+		{
+			"title": "Noob Dev Official Site",
+			"description": "Source of code of the official Noob Dev (mz10ah) website. Built with NextJS.",
+			"websiteLink": "https://noobdevofficial.vercel.app/",
+			"githubLink": "https://github.com/Muntasir2001/noob-dev-official-site",
+			"tags": ["NextJS", "SCSS", "Styled Components"]
+		},
+		{
+			"title": "Noob Feedback App",
+			"description": "A small and simple feedback app created with NextJS, Prisma and PostgreSQL.",
+			"websiteLink": "https://noob-feedback-app.vercel.app/",
+			"githubLink": "https://github.com/Muntasir2001/noob-feedback-app",
+			"tags": ["NextJS", "Prisma", "Styled Components", "PostgreSQL"]
+		}
+	]
+}

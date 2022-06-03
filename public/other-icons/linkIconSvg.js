@@ -23,9 +23,9 @@ const LinkIcon = ({ width, height, color, marginTop }) => {
 					transform='translate(0 6.11)'
 					fill='none'
 					stroke='#fff'
-					stroke-linecap='round'
-					stroke-linejoin='round'
-					stroke-width='4'
+					strokeLinecap='round'
+					strokeLinejoin='round'
+					strokeWidth='4'
 				/>
 				<line
 					id='Line_5'
@@ -35,9 +35,9 @@ const LinkIcon = ({ width, height, color, marginTop }) => {
 					transform='translate(22.757 4)'
 					fill='none'
 					stroke='#fff'
-					stroke-linecap='round'
-					stroke-linejoin='round'
-					stroke-width='4'
+					strokeLinecap='round'
+					strokeLinejoin='round'
+					strokeWidth='4'
 				/>
 				<path
 					id='Path_62'
@@ -46,9 +46,9 @@ const LinkIcon = ({ width, height, color, marginTop }) => {
 					transform='translate(22.404)'
 					fill='none'
 					stroke='#fff'
-					stroke-linecap='round'
-					stroke-linejoin='round'
-					stroke-width='4'
+					strokeLinecap='round'
+					strokeLinejoin='round'
+					strokeWidth='4'
 				/>
 			</g>
 		</Svg>
