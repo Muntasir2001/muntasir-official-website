@@ -20,14 +20,13 @@ const FeaturedProjectsSectionParent = styled.div`
 
 		/* mobile */
 		@media screen and (max-width: 780px) {
-			grid-template-columns: 1fr;
+			display: flex;
+			flex-direction: column;
 		}
 	}
 `;
 
 const FeaturedProjectsSection = () => {
-	console.log(featuredProjects);
-
 	return (
 		<>
 			<FeaturedProjectsSectionParent>

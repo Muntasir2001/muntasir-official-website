@@ -5,7 +5,6 @@ import FolderIcon from '../../public/other-icons/folderSvg';
 import LinkIcon from '../../public/other-icons/linkIconSvg';
 
 const FeaturedProjectCardParent = styled.div`
-	/* width: 600px; */
 	padding: 50px;
 	background-color: #313234;
 	display: flex;
