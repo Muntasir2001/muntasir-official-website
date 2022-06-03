@@ -35,11 +35,12 @@ const ContactFormParent = styled.div`
 			textarea {
 				margin-left: 275px;
 				border: 0;
-				min-width: 420px;
-				max-width: 420px;
-				min-height: 150px;
+
+				width: 420px;
+				height: 150px;
 				font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 				padding: 10px;
+				resize: none;
 			}
 		}
 
@@ -89,8 +90,7 @@ const ContactFormParent = styled.div`
 
 				textarea {
 					margin-left: 75px;
-					min-width: 300px;
-					max-width: 300px;
+					width: 300px;
 				}
 			}
 
@@ -115,8 +115,7 @@ const ContactFormParent = styled.div`
 
 				textarea {
 					margin-left: 25px;
-					min-width: 300px;
-					max-width: 300px;
+					width: 300px;
 				}
 			}
 
@@ -151,8 +150,7 @@ const ContactFormParent = styled.div`
 				textarea {
 					margin-left: 0px;
 					margin-top: 10px;
-					/* min-width: 300px; */
-					max-width: 100%;
+					width: 100%;
 				}
 			}
 
