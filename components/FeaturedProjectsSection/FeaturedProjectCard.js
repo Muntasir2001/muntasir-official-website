@@ -30,10 +30,17 @@ const FeaturedProjectCardParent = styled.div`
 		/* justify-content: space-between; */
 		height: 100%;
 
+		.title {
+			overflow-wrap: break-word;
+			max-width: 100%;
+		}
+
 		.description {
 			margin-top: 10px;
 			font-size: 1rem;
 			margin-bottom: auto;
+			overflow-wrap: break-word;
+			max-width: 100%;
 		}
 
 		.tags {
@@ -43,6 +50,8 @@ const FeaturedProjectCardParent = styled.div`
 			p {
 				font-size: 0.85rem;
 				margin-right: 10px;
+				overflow-wrap: break-word;
+				max-width: 100%;
 			}
 		}
 	}
