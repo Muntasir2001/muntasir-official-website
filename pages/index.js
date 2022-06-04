@@ -13,7 +13,10 @@ export default function home() {
 		<>
 			<Head>
 				<title>Noob Dev</title>
-				<meta name='description' content='Official Website of Noob Dev' />
+				<meta
+					name='description'
+					content='Official Website of Noob Dev (noob_dev54)'
+				/>
 				<link
 					rel='icon'
 					type='image/png'
