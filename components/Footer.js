@@ -32,9 +32,9 @@ const Footer = () => {
 					</ul>
 				</div>
 				<div className={style['social-medias']}>
-					<a href='#'>
+					{/* <a href='#'>
 						<FacebookIcon width={25} height={25} />
-					</a>
+					</a> */}
 					<a href='https://www.instagram.com/noob_dev54/'>
 						<InstagramIcon width={25} height={25} />
 					</a>
