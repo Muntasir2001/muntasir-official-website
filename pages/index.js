@@ -12,7 +12,7 @@ export default function home() {
 	return (
 		<>
 			<Head>
-				<title>Noob Dev 54</title>
+				<title>Muntasir | noob_dev54</title>
 				<meta
 					name='description'
 					content='Official Website of Noob Dev (noob_dev54)'
