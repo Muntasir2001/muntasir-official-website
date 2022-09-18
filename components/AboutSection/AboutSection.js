@@ -44,18 +44,17 @@ const AboutSection = () => {
 							<RedUnderline />
 						</SectionTitleDiv>
 						<p className='first-para'>
-							Hi, I am <span>Muntasir</span> (aka noob_dev), self-taught
-							Front-end Web Developer and second year Undergrad Computer
-							Science student. For the past 2 years, I have been learning
-							HTML5 and CSS3 from various resources (YouTube, Oneclick
-							Academy, Udemy) and recently, I started learning
-							JavaScript. It all started when my father introduced Web
-							Development to me back in 2017. Since then, I grew my
-							skillsets, worked on couple of personal projects and now, I
-							work with a society in my university as a Web Manager. I
-							have learned ReactJS, DiscordJS and NextJS and worked on
-							couple of projects with these langauges (project section
-							coming soon!)
+							Hi, I am <span>Muntasir</span> (aka noob_dev54),
+							self-taught Full Stack Web Developer and final year
+							Undergrad Computer Science student. For the past 2 years, I
+							have been working with JavaScript frameworks like ReactJS,
+							NextJS and NodeJS and recently, I started learning Flutter.
+							It all started when my father introduced me to Web
+							Development back in 2017. Since then, I grew my skillsets,
+							landed a Full Time Software Engineering placement role and
+							created 3+ Web Apps for different clients. Apart from
+							working full time, I work on my side projects to stay at
+							the top of my game.
 						</p>
 						<p className='second-para'>
 							I love learning new technologies and enjoy trying out new
