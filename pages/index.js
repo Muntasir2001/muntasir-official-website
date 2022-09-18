@@ -15,7 +15,7 @@ export default function home() {
 				<title>Muntasir | noob_dev54</title>
 				<meta
 					name='description'
-					content='Official Website of Noob Dev (noob_dev54)'
+					content='Official Website of Muntasir (noob_dev54)'
 				/>
 				<link
 					rel='icon'
