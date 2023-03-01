@@ -177,7 +177,7 @@ const ContactForm = () => {
 				<form
 					name='contact'
 					method='POST'
-					action='https://getform.io/f/868e81cc-9008-44fc-8639-da225ffd56b2'
+					action='https://getform.io/f/3dc9c1d2-4cdc-4163-8c1c-872c00025e58'
 				>
 					<div className='name-field field'>
 						<label htmlFor='name'>Name</label>
